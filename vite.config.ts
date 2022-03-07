@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     emptyOutDir: true,
     lib: {
-      entry: "src/main.tsx",
+      entry: "src/main.ts",
       name: packageJSON.name,
       formats: ["umd"],
       fileName: () => "index.js",

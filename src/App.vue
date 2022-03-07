@@ -10,7 +10,7 @@ let option = reactive(Object.assign(defaultOptions, options));
 const visitorCount = ref(data?.visitorCount || 0);
 const { userName, visitor } = makeStyle(option);
 
-defineUpdate(({ data }) => (option = data));
+defineUpdate(({ options }) => (option = options));
 
 onMounted(() => {
   ++visitorCount.value;
